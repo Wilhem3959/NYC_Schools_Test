@@ -27,7 +27,7 @@ class FragmentListSchool: Fragment() {
     private val repository: Repository by lazy {
         ReposetoryImpl()
     }
-    override fun onCreate(
+    override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?

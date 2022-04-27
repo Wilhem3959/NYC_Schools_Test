@@ -16,7 +16,8 @@ import com.example.nyc_schools_test.viewmodel.NYCViewModel
 class FragmentListSchool: Fragment() {
     private lateinit var binding: ListSchoolFragmentLayoutBinding
     private val viewModel: NYCViewModel by lazy {
-        object : ViewModelProvider.Factory{
+        ViewModelProvider(this,object :  ViewModelProvider.Factory
+        {
             override fun <T : ViewModel?>
                     create(modelClass: Class<T>): T {
                 return NYCViewModel(repository) as T

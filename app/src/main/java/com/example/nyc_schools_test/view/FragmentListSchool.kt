@@ -32,7 +32,6 @@ class FragmentListSchool: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View?{
-        super.onCreate(inflater, container, savedInstanceState)
         binding = ListSchoolFragmentLayoutBinding.inflate(inflater, container, false)
         return binding.root
 
